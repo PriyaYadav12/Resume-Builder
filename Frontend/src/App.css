@@ -11,6 +11,7 @@ body, html {
   font-family: "Parkinsans", sans-serif;
   font-optical-sizing: auto;
   font-style: normal;
+  background-color: #fff;
 }
 
 #root {
@@ -102,6 +103,7 @@ body, html {
 
 .loginContainer input,
 .loginContainer button {
+  background-color: #fff;
   color: inherit; 
   display: block;
   font-size: 1rem;
@@ -125,9 +127,15 @@ body, html {
 }
 
 .loginButton{
-  background-color: #e0c9e3;
+  background-color: #e0c9e3 !important;
   width: 50% !important;
   color: #fff !important;
+}
+input:focus, 
+button:focus {
+  outline: none; /* Remove the default focus outline */
+  border-color: #cb6ce6; /* Custom border color */
+  box-shadow: 0 0 4px #cb6ce6; /* Optional: Add a glowing effect */
 }
 .loginHeader{
   font-size: 1.5rem;
@@ -144,11 +152,18 @@ body, html {
   width: 150%;
 }
 
-.input-wrapper .icon {
+.input-wrapper .icon{
   position: absolute;
   left: 10px; /* Adjust based on padding of the input */
   font-size: 1.2rem; /* Adjust icon size */
   padding-top: 0.7rem;
 }
-
+.svgIcon{
+  padding-top: 0.5rem;
+}
+.errorMessage{
+  font-size: 1rem;
+  color:red;
+  line-height: normal;
+}
 

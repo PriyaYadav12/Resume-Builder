@@ -1,0 +1,154 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; /* Ensures padding and border do not affect the width/height */
+}
+
+body, html {
+  height: 100%;         /* Make the body and html elements take up the full height */
+  width: 100%;          /* Make the body and html elements take up the full width */
+  overflow: hidden;
+  font-family: "Parkinsans", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
+
+#root {
+  min-width: 100vw;    /* Max width of 1280px */
+  margin: 0 auto;       /* Center the content horizontally */
+  text-align: center;   /* Center text inside */
+  min-height: 100vh;    /* Ensure #root covers the full viewport height */
+  display: flex;        /* Enable Flexbox to control layout */
+  flex-direction: column; /* Allow stacking of children vertically */
+  justify-content: center; /* Vertically center the content */
+}
+
+
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+.card {
+  padding: 2em;
+}
+
+.read-the-docs {
+  color: #888;
+}
+.flex-container {
+  display: flex;
+  flex-wrap: nowrap;
+  min-height: 100vh; 
+  min-width: 100vw;  
+
+}
+
+.flex-container > div {
+  background-color: #fff;
+  text-align: center;
+  line-height: 75px;
+  font-size: 30px;
+}
+.LoginImage{
+  border-radius: 5%; 
+  border: 0.2rem solid #e0c9e3;
+  object-fit: cover; 
+  border-left: none;
+  height: 81%;
+  margin-top: 5rem;
+}
+.loginContainer {
+  flex: 1; /* Allow it to grow and take available space */
+  height: 100%; /* Fit the height of the parent */
+  display: flex; /* Ensure the container itself uses flexbox */
+  flex-direction: column; /* Stack child elements vertically */
+  justify-content: center; /* Vertically center content */
+  align-items: center; /* Horizontally center content */
+  margin-top: 10rem; /* Adjust as needed */
+  color: #cb6ce6;
+}
+
+.loginContainer .loginDiv {
+  display: flex; /* Use flexbox for centering */
+  flex-direction: column; /* Stack inputs and button vertically */
+  justify-content: center; /* Center vertically */
+  align-items: center; /* Center horizontally */
+  gap: 1rem; /* Optional: Add spacing between elements */
+}
+
+.loginContainer input,
+.loginContainer button {
+  color: inherit; 
+  display: block;
+  font-size: 1rem;
+  padding: 0.5rem 1rem; 
+  text-align: center; 
+  width: 150%;
+  border: 1px solid #cb6ce6;
+  border-radius: 1rem;
+}
+.loginContainer input::placeholder{
+  color: inherit; 
+
+}
+.signupPara{
+  font-size: 1rem;
+
+}
+.signupPara a{
+  color: #31705a;
+  font-weight: bold;
+}
+
+.loginButton{
+  background-color: #e0c9e3;
+  width: 50% !important;
+  color: #fff !important;
+}
+.loginHeader{
+  font-size: 1.5rem;
+  font-weight: lighter !important;
+}
+.oauthButton{
+  width: 50% !important;
+  margin-bottom: 2rem !important;
+}
+.input-wrapper {
+  position: relative; /* Enables positioning of child elements */
+  display: flex;
+  align-items: center; /* Vertically align input and icon */
+  width: 150%;
+}
+
+.input-wrapper .icon {
+  position: absolute;
+  left: 10px; /* Adjust based on padding of the input */
+  font-size: 1.2rem; /* Adjust icon size */
+  padding-top: 0.7rem;
+}
+
+
